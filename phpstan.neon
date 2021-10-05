@@ -1,0 +1,8 @@
+parameters:
+    level: 6
+    paths: ['src']
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    ignoreErrors:
+        - '#Unsafe usage of new static\(\)#'
+        - '#Call to an undefined method React\\Promise\\PromiseInterface::otherwise\(\)#'
