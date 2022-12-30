@@ -3,15 +3,15 @@
     "description": "ReactPHP QueryList Scrapper",
     "type": "library",
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^8.0",
         "ext-json": "*",
         "jaeger/querylist": "^4.2",
-        "react/http": "^1.5"
+        "react/http": "^1.8"
     },
     "require-dev": {
-        "phpstan/phpstan": "^0.12.99",
+        "phpstan/phpstan": "^1.9",
         "phpunit/phpunit": "^9.5",
-        "clue/block-react": "^1.4"
+        "clue/block-react": "^1.5"
     },
     "license": "MIT",
     "autoload": {
