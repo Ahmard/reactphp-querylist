@@ -18,10 +18,10 @@ class Client
      * @return PromiseInterface
      */
     public function execute(
-        string $requestMethod,
-        string $url,
-        array  $headers = [],
-               $body = ''
+        string                         $requestMethod,
+        string                         $url,
+        array                          $headers = [],
+        ReadableStreamInterface|string $body = ''
     ): PromiseInterface
     {
         return $this->prepareQueryable(
@@ -70,7 +70,7 @@ class Client
      * @param ReadableStreamInterface|string $body
      * @return PromiseInterface
      */
-    public static function post(string $url, array $headers = [], $body = ''): PromiseInterface
+    public static function post(string $url, array $headers = [], ReadableStreamInterface|string $body = ''): PromiseInterface
     {
         return (new static())->execute('POST', $url, $headers, $body);
     }
@@ -95,7 +95,7 @@ class Client
      * @param ReadableStreamInterface|string $body
      * @return PromiseInterface
      */
-    public static function patch(string $url, array $headers = [], $body = ''): PromiseInterface
+    public static function patch(string $url, array $headers = [], ReadableStreamInterface|string $body = ''): PromiseInterface
     {
         return (new static())->execute('PATCH', $url, $headers, $body);
     }
@@ -108,7 +108,7 @@ class Client
      * @param ReadableStreamInterface|string $body
      * @return PromiseInterface
      */
-    public static function put(string $url, array $headers = [], $body = ''): PromiseInterface
+    public static function put(string $url, array $headers = [], ReadableStreamInterface|string $body = ''): PromiseInterface
     {
         return (new static())->execute('PUT', $url, $headers, $body);
     }
